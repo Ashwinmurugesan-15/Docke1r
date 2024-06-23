@@ -205,6 +205,5 @@ describe('GET /transactions', () => {
     const response = await request(app.app).get('/transactions');
 
     expect(response.status).to.be.eq(StatusCodes.UNAUTHORIZED);
-    // expect(response.body).to.be.deep.eq(filteredByDate);
   });
 });
